@@ -21,8 +21,8 @@ public class Restaurante {
     @OneToMany(mappedBy = "restaurante")
     private List<Compra> compras;
 
-   /* @OneToMany(mappedBy = "restaurante")
-    private List<AdminRestaurante> adminRestaurantes;*/
+    @OneToMany(mappedBy = "restaurante")
+    private List<AdminRestaurante> adminRestaurantes;
 
 
 
@@ -68,13 +68,13 @@ public class Restaurante {
 
 
 
-   /* public List<AdminRestaurante> getAdminRestaurantes() {
+   public List<AdminRestaurante> getAdminRestaurantes() {
         return adminRestaurantes;
     }
 
     public void setAdminRestaurantes(List<AdminRestaurante> adminRestaurantes) {
         this.adminRestaurantes = adminRestaurantes;
-    }*/
+    }
 
     public List<Producto> getProductos() {
         return productos;
